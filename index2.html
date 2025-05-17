@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftFinder - Find Perfect Gifts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <div data-scroll-container>
+        <!-- Navbar -->
+        <div class="container gradient-container">
+            <nav class="navbar navbar-expand-lg w-100">
+                <a class="navbar-brand ps-3" href="#">Home</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#">Browse Gifts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gift Quiz</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-gradient pe-3" href="#SuggestionForm">Submit Ideas</button>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="animated-bg">
+                <div class="bg-shape" style="width: 300px; height: 300px; top: 50px; right: 20px;"></div>
+                <div class="bg-shape" style="width: 150px; height: 150px; top: 100px; left: -50px;"></div>
+
+                <!-- <div class="bg-shape" style="width: 200px; height: 200px; bottom: 50px; left: 100px;"></div> -->
+                <div class="bg-shape" style="width: 150px; height: 150px; top: 350px; right: 50%;"></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h1 class="gradient-text">Find the Perfect Gift</h1>
+                        <p>Discover unique gift ideas for your loved ones</p>
+                        <a href="#gifts" class="btn btn-gradient">Explore Gifts <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 image-container" data-aos="fade-left">
+                        <img src="Images/herobg2.jpg" alt="Gift" class="img-fluid rounded-3">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section id="filter-section">
+            <div class="container gradient-container">
+                <div class="filter-card p-4" data-aos="fade-up">
+                    <div class="highlight-container">
+                        <div class="highlight"></div>
+                        <div class="row gap-4">
+                            <div class="col-12">
+                                <h3 class="mb-4 text-center find-gift-ideas ">Find Gift Ideas</h3>
+                            </div>
+
+                            <!-- Occasion Selection -->
+                            <div class="col-12 mb-4">
+                                <h5>Occasion</h5>
+                                <div class="row">
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon ">🎂</div>
+                                            <div class="">Birthday</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon">💍</div>
+                                            <div>Anniversary</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon">🎓</div>
+                                            <div>Graduation</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon">🎄</div>
+                                            <div>Christmas</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon">💝</div>
+                                            <div>Valentine's</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="occasion-btn" onclick="this.classList.toggle('active')">
+                                            <div class="occasion-icon">🏠</div>
+                                            <div>Housewarming</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-container col-lg-6 ">
+                                <h5>Relationship</h5>
+                                <select class="form-select">
+                                    <option selected>Choose relationship...</option>
+                                    <option>Partner/Spouse</option>
+                                    <option>Parent</option>
+                                    <option>Friend</option>
+                                    <option>Sibling</option>
+                                    <option>Colleague</option>
+                                    <option>Child</option>
+                                </select>
+                            </div>
+
+                            <div class="range-container col-lg-6">
+                                <h5>Budget Range</h5>
+                                <div class=" range-slider">
+                                    <input type="range" min="10" max="500" value="100" class="slider" id="budgetRange">
+                                </div>
+                                <div class="range-values">
+                                    <span>$10</span>
+                                    <span id="budgetValue">$100</span>
+                                    <span>$500+</span>
+                                </div>
+                            </div>
+                            <!-- Tags Selection -->
+                            <div class="tags-container col-lg-12">
+                                <h5>Gift Tags</h5>
+                                <div>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Handmade</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Eco-friendly</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Tech</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Experience</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Fashion</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Home</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Books</span>
+                                    <span class="tag-btn" onclick="this.classList.toggle('active')">Personalized</span>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button class="find-gift-btn">Find Gift Ideas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="suggestion-container" id="suggest" data-scroll-ignore>
+            <h2>Suggest a Gift</h2>
+            <form id="SuggestionForm">
+                <!-- Gift Name -->
+                <input type="text" class="form-control mb-3" placeholder="Gift Name (e.g., Handmade Candle)" required>
+
+                <!-- Description -->
+                <textarea class="form-control mb-3"
+                    placeholder="Gift Description (e.g., A personalized handmade candle with initials)" rows="3"
+                    required></textarea>
+
+                <!-- Occasion Multi-Select -->
+                <label for="occasionSelect" class="form-label">Occasion</label>
+                <div class="multi-select" id="occasionSelected"></div>
+                <select class="form-select mb-3" id="occasionSelect" onchange="addOccasion()">
+                    <option value="">Select Occasion</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Festive">Festive</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <!-- Relationship Multi-Select -->
+                <label for="relationshipSelect" class="form-label">Relationship</label>
+                <div class="multi-select" id="relationshipSelected"></div>
+                <select class="form-select mb-3" id="relationshipSelect" onchange="addRelationship()">
+                    <option value="">Choose Relationship</option>
+                    <option value="Partner/Spouse">Partner/Spouse</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Sibling">Sibling</option>
+                    <option value="Colleague">Colleague</option>
+                    <option value="Child">Child</option>
+                </select>
+
+                <!-- Price Range -->
+                <input type="number" class="form-control mb-3" placeholder="Approximate Price (e.g., 50)" min="1"
+                    required>
+
+                <!-- Optional Comment -->
+                <textarea class="form-control mb-3"
+                    placeholder="Additional Suggestions (Optional) e.g., Wrap it in a glittery box, add a thank-you note, etc."
+                    rows="2"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Suggestion</button>
+            </form>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5 class="mb-3">Gift Finder</h5>
+                        <p class="text-center align-items-center">Find the perfect gift for every occasion,
+                            relationship, and budget.</p>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3">Explore</h5>
+                        <ul class="list-unstyled text-center">
+                            <li><a href=" #" class="text-decoration-none text-light">Home</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">Browse Gifts</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">Gift Quiz</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">Submit Ideas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h5 class="mb-3">About</h5>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="#" class="text-decoration-none text-light">Our Story</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">How It Works</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">Testimonials</a></li>
+                            <li><a href="#" class="text-decoration-none text-light">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5 class="mb-3">Connect With Us</h5>
+                        <div class="d-flex gap-3 mb-3">
+                            <a href="#" class="text-light">Facebook</a>
+                            <a href="#" class="text-light">Twitter</a>
+                            <a href="#" class="text-light">Instagram</a>
+                            <a href="#" class="text-light">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4 bg-light">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">© 2025 GiftFinder. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="JS/main2.js"></script>
+
+    <!-- <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+        });
+        const excludedSections = document.querySelectorAll("#suggest");
+        excludedSections.forEach((section) => section.setAttribute("data-scroll", ""));
+    </script> -->
+
+
+</body>
+
+</html>
