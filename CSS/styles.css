@@ -18,7 +18,6 @@ body,
 html {
     height: 100%;
     width: 100%;
-
 }
 
 body {
@@ -39,20 +38,19 @@ body {
     pointer-events: none;
 }
 
-
 /* Hero Section */
-.hero {
+.FrontPage {
     padding: 20px 0;
     margin-bottom: 70px;
 }
 
-.hero h1 {
+.FrontPage h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    color: #4a90e2;
 }
 
-.hero p {
+.FrontPage p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -130,44 +128,50 @@ body {
 }
 
 .btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #4a90e2;
+    border-color: #4a90e2;
     margin: 0 5px;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary.active {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: #4a90e2;
+    border-color: #4a90e2;
     color: white;
 }
 
 /* Suggest Section */
 .suggest {
     padding: 80px 0;
-    background-color: var(--secondary-color);
+    background-color: #2c3e50;
 }
 
 .form-control {
-    background-color: var(--card-bg);
-    border: 1px solid var(--primary-color);
+    background-color: #2d2d2d;
+    border: 1px solid #4a90e2;
     color: white;
 }
 
 .form-control:focus {
-    background-color: var(--card-bg);
+    background-color: #2d2d2d;
     color: white;
-    border-color: var(--primary-color);
+    border-color: #4a90e2;
     box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
 }
 
 /* Footer */
 .footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: #2c3e50;
+    color: #ffffff;
     padding: 20px 0;
     margin-top: 50px;
 }
+
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -182,12 +186,7 @@ body {
     }
 }
 
-.animate-fade-in {
-    animation: fadeIn 0.6s ease-out;
-}
-
-
-.gradient-text {
+.CustomText {
     font-size: 48px;
     font-weight: bold;
     background: linear-gradient(90deg, #B1DBF5, #2c169a, #F3E9A7);
@@ -195,7 +194,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.gradient-container {
+.CustomContainer {
     position: relative;
     margin: 50px auto;
     padding: 10px;
@@ -207,7 +206,7 @@ body {
     box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.1);
 }
 
-.gradient-container:before {
+.CustomContainer:before {
     content: '';
     position: absolute;
     top: -3px;
@@ -238,13 +237,13 @@ body {
 }
 
 .navbar-brand,
-.nav-link {
+.navItems {
     color: white !important;
     font-weight: bold;
     font-size: 24px;
 }
 
-.btn-gradient {
+.CustomButton {
     padding: 10px 30px;
     color: #fff;
     background: linear-gradient(45deg, #ff007f, #00ffcc, #007fff, #ff007f);
@@ -264,18 +263,18 @@ body {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.btn-gradient:hover {
+.CustomButton:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
 }
 
-.btn-gradient .arrow {
+.CustomButton .arrow {
     display: inline-block;
     transition: transform 0.3s ease;
     font-weight: 900;
 }
 
-.btn-gradient:hover .arrow {
+.CustomButton:hover .arrow {
     transform: rotate(-45deg);
     /* Rotate to top-right */
 }
@@ -286,10 +285,9 @@ body {
 
 /* find gift ideas */
 
-.filter-card {
+.FilterCard {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    /* transform: translateY(-50px); */
     background: url("/Images/background.png");
     position: relative;
     z-index: 20;
@@ -309,7 +307,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.occasion-btn {
+.OcaasionCard {
     border-radius: 12px;
     border: 2px solid #0B1023;
     background: rgba(255, 255, 255, 0.2);
@@ -324,14 +322,14 @@ body {
     transition: all 0.3s;
 }
 
-.occasion-btn:hover,
-.occasion-btn.active {
+.OcaasionCard:hover,
+.OcaasionCard.active {
     border-color: yellow;
     color: yellow;
     transform: translateY(-5px);
 }
 
-.occasion-icon {
+.OccasionIcon {
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -405,7 +403,7 @@ body {
     position: relative;
 }
 
-.dropdown-container {
+.RelationshipContainer {
     /* width: 300px; */
     padding: 20px;
     background: linear-gradient(135deg, #2b5876, #4e4376);
@@ -413,7 +411,7 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-.dropdown-container h5 {
+.RelationshipContainer h5 {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -449,7 +447,7 @@ h5 {
 }
 
 
-.range-container {
+.BudgetContainer {
     width: 500px;
     padding: 20px;
     background: linear-gradient(135deg, #2b5876, #4e4376);
@@ -458,7 +456,7 @@ h5 {
     text-align: center;
 }
 
-.range-container h5 {
+.BudgetContainer h5 {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -533,7 +531,7 @@ h5 {
 }
 
 
-.tags-container {
+.GiftTag {
     padding: 20px;
     background: linear-gradient(135deg, #2b5876, #4e4376);
     border-radius: 15px;
@@ -541,14 +539,14 @@ h5 {
     text-align: center;
 }
 
-.tags-container h5 {
+.GiftTag h5 {
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
     color: #ffd700;
 }
 
-.tag-btn {
+.TagElement {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
@@ -563,13 +561,13 @@ h5 {
     text-align: center;
 }
 
-.tag-btn:hover {
+.TagElement:hover {
     background: linear-gradient(135deg, #2575fc, #6a11cb);
     transform: scale(1.1);
     box-shadow: 0 10px 25px rgba(37, 117, 252, 0.5);
 }
 
-.tag-btn.active {
+.TagElement.active {
     background: linear-gradient(135deg, #0fd850, #f9f047);
     color: #121212;
     box-shadow: 0 5px 20px rgba(15, 216, 80, 0.6);
@@ -637,13 +635,13 @@ h5 {
 
 /* highlight container */
 
-.highlight-container {
+.FilterContainer {
     position: relative;
     text-align: center;
     color: #fff;
 }
 
-.highlight-container h1 {
+.FilterContainer h1 {
     font-size: 5rem;
     font-weight: bold;
     background: linear-gradient(to right, #ffc700, #ff007f);
@@ -651,7 +649,7 @@ h5 {
     color: transparent;
 }
 
-.highlight-container p {
+.FilterContainer p {
     font-size: 1.5rem;
     margin-top: 10px;
 }
@@ -683,7 +681,7 @@ h5 {
     }
 }
 
-.highlight-container h5 {
+.FilterContainer h5 {
     font-size: 25px;
     font-weight: 600;
     /* font-family: sans-serif; */
@@ -691,7 +689,7 @@ h5 {
 
 
 
-.suggestion-container {
+.SuggestionContainer {
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;

@@ -114,3 +114,4 @@ budgetRange.addEventListener('input', function () {
     budgetValue.textContent = '$' + this.value;
 });
 
+
