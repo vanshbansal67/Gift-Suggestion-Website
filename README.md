@@ -36,12 +36,25 @@ The **Gift Suggestion Website** streamlines the gifting process with personalize
 
 This project is built using:
 
-| Technology       | Purpose                                     |
-| ---------------- | ------------------------------------------- |
-| **HTML5 & CSS3** | Structuring and styling the user interface. |
-| **JavaScript**   | Adding interactivity and dynamic features.  |
+---
+
+### 💻 Languages and Tools:
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" height="50"/>
+  <img src="https://greensock.com/uploads/monthly_2020_04/gsap-logo-square.png.74624d4d1467978d6a994ca7ab78667e.png" alt="GSAP" width="50" height="50"/>
+</p>
 
 ---
+
+### Explanation:
+
+1. **HTML5, CSS3, and JavaScript**: Direct links to the icons via [Devicons](https://devicon.dev/).
+2. **Bootstrap**: Using the bootstrap icon available in the same library.
+3. **GSAP**: Added via GreenSock's resources.
 
 ## 🛠 Installation
 
