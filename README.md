@@ -36,14 +36,10 @@ The **Gift Suggestion Website** streamlines the gifting process with personalize
 
 This project is built using:
 
-| Technology       | Purpose                                          |
-| ---------------- | ------------------------------------------------ |
-| **HTML5 & CSS3** | Structuring and styling the user interface.      |
-| **JavaScript**   | Adding interactivity and dynamic features.       |
-| **Node.js**      | Backend runtime environment.                     |
-| **Express.js**   | Web framework for server-side development.       |
-| **MongoDB**      | Database for storing user submissions and votes. |
-| **Git**          | Version control and collaboration.               |
+| Technology       | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| **HTML5 & CSS3** | Structuring and styling the user interface. |
+| **JavaScript**   | Adding interactivity and dynamic features.  |
 
 ---
 
