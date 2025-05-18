@@ -34,10 +34,6 @@ The **Gift Suggestion Website** streamlines the gifting process with personalize
 
 ## 💻 Technologies Used
 
-This project is built using:
-
----
-
 ### 💻 Languages and Tools:
 
 <p align="center">
@@ -45,7 +41,6 @@ This project is built using:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" height="50"/>
-  <img src="https://greensock.com/uploads/monthly_2020_04/gsap-logo-square.png.74624d4d1467978d6a994ca7ab78667e.png" alt="GSAP" width="50" height="50"/>
 </p>
 
 ---
