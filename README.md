@@ -90,14 +90,8 @@ We welcome contributions from everyone! Here's how you can get involved:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
 ## 📧 Contact
 
-For questions or feedback, feel free to reach out at **[support@giftsuggestionwebsite.com](mailto:support@giftsuggestionwebsite.com)**.
+For questions or feedback, feel free to reach out at **[bnslgvansh67@gmail.com](mailto:bnslgvansh67@gmail.com)**.
 
 ---
