@@ -45,12 +45,6 @@ The **Gift Suggestion Website** streamlines the gifting process with personalize
 
 ---
 
-### Explanation:
-
-1. **HTML5, CSS3, and JavaScript**: Direct links to the icons via [Devicons](https://devicon.dev/).
-2. **Bootstrap**: Using the bootstrap icon available in the same library.
-3. **GSAP**: Added via GreenSock's resources.
-
 ## 🛠 Installation
 
 Follow these steps to run the project locally:
